@@ -4,4 +4,4 @@ class Solution:
         for num in set(nums):
             hashtable[num] = nums.count(num)
             
-        return list(dict(sorted(hashtable.items(), key=lambda item: item[1], reverse=True)).keys())[:k]
+        return list(dict(sorted(hashtable.items(), key=lambda item: item[1], reverse=True)[:k]).keys())
