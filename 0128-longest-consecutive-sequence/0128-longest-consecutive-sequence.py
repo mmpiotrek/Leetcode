@@ -3,6 +3,7 @@ class Solution:
         longest_sequence = 0
         counter = 1
         nums = sorted(set(nums))
+        
         if len(nums) == 1:
             return counter
         for i, num in enumerate(nums[1:]):
